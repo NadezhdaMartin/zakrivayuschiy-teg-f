@@ -72,7 +72,7 @@
               <img
                 src="./images/image.jpg"
                 alt=""
-                class="card__image"
+                class="card__image contrast"
                 loading="lazy"
                 width="696"
                 height="696"
@@ -118,7 +118,7 @@
               <img
                 src="./images/image.jpg"
                 alt=""
-                class="card__image"
+                class="card__image brightness"
                 loading="lazy"
                 width="696"
                 height="696"
@@ -161,7 +161,7 @@
               <img
                 src="./images/image.jpg"
                 alt=""
-                class="card__image"
+                class="card__image saturate"
                 loading="lazy"
                 width="696"
                 height="696"
@@ -206,7 +206,7 @@
               <img
                 src="./images/image.jpg"
                 alt=""
-                class="card__image"
+                class="card__image invert"
                 loading="lazy"
                 width="696"
                 height="696"
@@ -252,7 +252,7 @@
               <img
                 src="./images/image.jpg"
                 alt=""
-                class="card__image"
+                class="card__image hue-rotate"
                 loading="lazy"
                 width="696"
                 height="696"
@@ -295,7 +295,7 @@
               <img
                 src="./images/image.jpg"
                 alt=""
-                class="card__image"
+                class="card__image blur"
                 loading="lazy"
                 width="696"
                 height="696"
@@ -340,7 +340,7 @@
               <img
                 src="./images/image.jpg"
                 alt=""
-                class="card__image"
+                class="card__image mix-filter"
                 loading="lazy"
                 width="696"
                 height="696"
@@ -383,12 +383,30 @@
           </article>
         </li>
       </ul>
-      <button class="floppy__button button" type="button">
+      <button
+        class="floppy__button button"
+        type="button"
+        onclick="window['dialog-pop-up'].showModal()"
+        aria-controls="dialog-pop-up"
+      >
         <svg class="floppy-icon" viewBox="0 0 40 40">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
+      <dialog class="pop-up" id="dialog-pop-up">
+        <svg class="floppy-icon pop-up__icon" viewBox="0 0 40 40">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <p class="pop-up__description">Вставьте дискету, чтобы продолжить</p>
+        <button
+          class="button pop-up__button"
+          type="button"
+          onclick="window['dialog-pop-up'].close()"
+        >
+          ОК
+        </button>
+      </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
