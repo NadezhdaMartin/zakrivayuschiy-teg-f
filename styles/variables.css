@@ -1,1 +1,22 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --main-font: 'Inter-Variable';
+  --accent-font: 'PressStart2P-Regular';
+  --main-font-weight: 400;
+  --title-font-weight: 700;
+
+  --header-container-width: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
+  --header-container-padding-x: clamp(0.875rem, 9.953vw - 1.458rem, 7.5rem);
+  --header-container-padding-y: clamp(7.5rem, 0.751vw + 7.324rem, 8rem);
+  --card-container-width: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
+
+  --logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --h1-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+
+  --border: 2px solid #000;
+
+  --bg-color: #fff;
+  --text-color: #000;
+  --stroke-color: #fff;
+}
