@@ -23,5 +23,9 @@
 
   --bg-color: #fff;
   --text-color: #000;
+  --text-color-light: #fff;
   --stroke-color: #fff;
+  --accent-color: #000;
+  --icon-contour: #000;
+  --animation-fill-color: #ff0000;
 }
