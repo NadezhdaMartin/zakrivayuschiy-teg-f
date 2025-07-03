@@ -298,9 +298,6 @@
 
 .floppy-icon__filter {
   color: #fff;
-}
-
-.floppy-icon__filter {
   mix-blend-mode: difference;
 }
 
@@ -367,7 +364,7 @@
 
   .pop-up[open] {
     padding-inline: 42px;
-  } 
+  }
 }
 
 @supports((text-stroke: 1px var(--stroke-color, #fff))) or (-webkit-text-stroke: 1px var(--stroke-color, #fff)) {
