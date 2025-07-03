@@ -14,7 +14,7 @@
   color: var(--text-color, #000);
   font-family: var(--main-font, 'Inter-Variable', sans-serif);
   font-size: 18px;
-  background-image: var(--bg-image, #fff);
+  background-image: var(--bg-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -36,7 +36,7 @@
   border: var(--border);
   padding: var(--header-container-padding-y) var(--header-container-padding-x);
   font-family: var(--accent-font, 'PressStart2P-Regular', sans-serif);
-  background-color: var(--bg-color, #fff);
+  background-color: var(--bg-color-element, #fff);
   inline-size: var(--header-container-width);
 }
 
@@ -72,7 +72,7 @@
 }
 
 .card {
-  background-color: var(--bg-color, #fff);
+  background-color: var(--bg-color-element, #fff);
 }
 
 .card__title {
@@ -90,19 +90,19 @@
 }
 
 .brightness {
-  filter: brightness(300%);
+  filter: brightness(80%);
 }
 
 .saturate {
-  filter: saturate(50%);
+  filter: saturate(90%);
 }
 
 .invert {
-  filter: invert(0.7);
+  filter: invert(0.2);
 }
 
 .hue-rotate {
-  filter: hue-rotate(-90deg);
+  filter: hue-rotate(-20deg);
 }
 
 .blur {
@@ -110,7 +110,7 @@
 }
 
 .mix-filter {
-  filter: contrast(2) brightness(200%);
+  filter: contrast(1.1) brightness(120%);
 }
 
 .card__image {
@@ -159,7 +159,7 @@
   font-family: var(--accent-font, 'PressStart2P-Regular', sans-serif);
   font-size: 14px;
   line-height: 0.9;
-  background-color: var(--bg-color, #fff);
+  background-color: var(--bg-color-element, #fff);
   transition: box-shadow 0.3s ease;
 }
 
@@ -175,6 +175,11 @@
   background-color: var(--accent-color, #000);
   transition: transform 0.5s ease-in-out;
   transform: translateX(-100%);
+}
+
+.button:hover,
+.like-icon {
+  cursor: pointer;
 }
 
 .button:hover::before {
