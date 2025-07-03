@@ -27,5 +27,7 @@
   --stroke-color: #fff;
   --accent-color: #000;
   --icon-contour: #000;
+  --icon-contour-accent: #ff0000;
+  --animation-fill-color-dark: #000;
   --animation-fill-color: #ff0000;
 }
