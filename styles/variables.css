@@ -2,7 +2,7 @@
 
 :root {
   --main-font: 'Inter-Variable';
-  --accent-font: 'PressStart2P-Regular';
+  --accent-font: 'PressStart2P';
   --main-font-weight: 400;
   --title-font-weight: 700;
 
@@ -12,7 +12,7 @@
   --card-container-width: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
 
   --logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  --h1-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 
   --border: 2px solid #000;
 

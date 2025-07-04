@@ -35,7 +35,7 @@
   margin: 100px auto;
   border: var(--border);
   padding: var(--header-container-padding-y) var(--header-container-padding-x);
-  font-family: var(--accent-font, 'PressStart2P-Regular', sans-serif);
+  font-family: var(--accent-font, 'PressStart2P', fantasy);
   background-color: var(--bg-color-element, #fff);
   inline-size: var(--header-container-width);
 }
@@ -45,8 +45,12 @@
   text-decoration: none;
 }
 
+.header__logo:focus {
+  outline: none;
+}
+
 .header__title {
-  font-size: var(--h1-font-size);
+  font-size: var(--title-font-size);
   text-transform: uppercase;
 }
 
@@ -125,7 +129,7 @@
 .watermark {
   position: absolute;
   opacity: 0.5;
-  font-family: var(--accent-font, 'PressStart2P-Regular', sans-serif);
+  font-family: var(--accent-font, 'PressStart2P', fantasy);
   font-size: 14px;
   text-shadow: -1px 0 var(--stroke-color, #fff), 0 1px var(--stroke-color, #fff), 1px 0 var(--stroke-color, #fff), 0 -1px var(--stroke-color, #fff);
   inset-block-start: 25px;
@@ -156,7 +160,7 @@
   border: var(--border);
   overflow: hidden;
   color: var(--text-color-light, #fff);
-  font-family: var(--accent-font, 'PressStart2P-Regular', sans-serif);
+  font-family: var(--accent-font, 'PressStart2P', fantasy);
   font-size: 14px;
   line-height: 0.9;
   background-color: var(--bg-color-element, #fff);
@@ -191,10 +195,10 @@
 .card__icon-button {
   border: none;
   padding: 0;
-  outline: 2px solid transparent;
+  border: 2px solid transparent;
   background-color: transparent;
-  transition: outline 0.3s ease;
-  block-size: 38px;
+  transition: border 0.3s ease;
+  block-size: 36px;
 }
 
 .card__icon-button:focus {
@@ -202,7 +206,7 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: var(--border);
+  border: var(--border);
 }
 
 .like-icon {
@@ -212,18 +216,22 @@
 }
 
 .contour {
+  fill: var(--icon-contour);
   transition: fill 0.1s linear;
 }
 
 .core {
+  fill: transparent;
   transition: fill 0.3s linear 0.03s;
 }
 
 .main-body {
+  fill: transparent;
   transition: fill 0.3s linear;
 }
 
 .sparks {
+  fill: var(--animation-fill-color);
   opacity: 0;
 }
 
@@ -238,7 +246,7 @@
 }
 
 .like-icon:active .core {
-  fill: var(--animation-fill-colort, #ff0000);
+  fill: var(--animation-fill-color, #ff0000);
   transition: fill 0.3s linear;
 }
 
@@ -272,7 +280,7 @@
 }
 
 .card__like-button {
-  padding: 9px 17px;
+  padding: 10px 17px;
   min-inline-size: 130px;
 }
 
@@ -315,7 +323,7 @@
 
 .pop-up[open]::backdrop {
   opacity: 0.75;
-  background: linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
+  background-color: #000;
 } 
 
 .pop-up__icon {
@@ -325,7 +333,7 @@
 }
 
 .pop-up__description {
-  font-family: var(--accent-font, 'PressStart2P-Regular', sans-serif);
+  font-family: var(--accent-font, 'PressStart2P', fantasy);
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
@@ -364,6 +372,11 @@
 
   .pop-up[open] {
     padding-inline: 42px;
+  }
+
+  .pop-up__icon {
+    inline-size: 39px;
+    block-size: 39px;
   }
 }
 
