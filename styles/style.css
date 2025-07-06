@@ -209,7 +209,6 @@
 }
 
 .like-icon {
-  transform-origin: center;
   inline-size: 39px;
   block-size: 36px;
 }
@@ -271,6 +270,7 @@
 }
 
 .like-icon.is-liked .heart {
+  transform-origin: center;
   animation: growth 0.3s ease-in 0.1s;
 }
 
